@@ -1,0 +1,797 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    z-index: 20;
+}
+
+
+.main-header {
+    /* padding: 40px 0px; */
+    background: linear-gradient(335.97deg, #031F56 .64%, #082B6E 95.19%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+
+
+.logo-text {
+    color: #fff;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.listNav {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.itemList {
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 10px;
+    padding: 22px;
+    transition: 300ms;
+
+}
+
+.itemList:last-child {
+    margin-right: 0;
+}
+
+
+.itemList:hover {
+    background-color: #085EE8;
+}
+
+.news {
+    background-image: url(img/bg-news.png);
+    background-repeat: no-repeat;
+    height: 732px;
+    background-size: cover;
+    margin-top: 54px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.news:hover .more-arrow {
+    transform: translateX(10px);
+}
+
+.news:hover .more {
+    color: orange;
+}
+
+.grad {
+    background-image: linear-gradient(90deg, #031f565d 24.91%, rgba(30, 65, 136, 0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.container-news {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.a {
+    z-index: 20;
+}
+
+
+.date {
+    color: grey;
+    margin: 10px 0px 30px 0px;
+}
+
+.title-news {
+    font-size: 56px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.more {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    transition: 300ms;
+
+}
+
+.more-arrow {
+    margin-left: 10px;
+    color: orange;
+    transition: 300ms;
+}
+
+
+
+.container-match {
+    position: absolute;
+    right: 0;
+    width: 366px;
+}
+
+
+.block-title {
+    height: 58px;
+    width: 100%;
+    padding: 20px 24px 12px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    font-family: "Grotesk Semibold-free", sans-serif;
+    color: #fff;
+    background-color: #031F56;
+}
+
+.card {
+    width: 100%;
+    background-color: #0A3A98;
+    padding: 24px;
+    height: 100%;
+}
+
+.date-match {
+    color: #fff;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px;
+}
+
+.name,
+.place {
+    text-align: center;
+
+}
+
+.score {
+    background-color: #031F56;
+    padding: 14px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.name {
+    font-family: "Grotesk Semibold-free", sans-serif;
+    color: #c8cee3;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.place {
+    font-family: "Grotesk Semibold-free", sans-serif;
+    color: #c8cee3;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+.time {
+    margin: 0 30px;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Grotesk Semibold-free", sans-serif;
+    color: #fff;
+}
+
+
+.card-club {
+    position: relative;
+    background-image: url(img/bg-card.png);
+    width: 100%;
+    
+    padding: 202px 0px 79px 72px;
+    border-radius: 0px 20px 20px 0px;
+    background-repeat: no-repeat;
+    margin-top: 56px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.left-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.card-club2 {
+    position: relative;
+    background-image: url(img/bg-card2.jpg);
+    width: 100%;
+    
+    padding: 167px 0px 40px 143px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    top: 96px;
+    right: 90px;
+    z-index: 30;
+}
+
+.grad2 {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-image: linear-gradient(360deg, #031f5652 24.91%, rgba(30, 65, 136, 0) 100%);
+
+}
+
+.info-card {
+    position: relative;
+    z-index: 20;
+}
+
+.date {
+    color: rgb(244, 245, 251);
+    font-size: 14px;
+}
+
+.description {
+    margin: 24px 0px 32px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-club:hover .more-arrow {
+    transform: translateX(10px);
+}
+
+.card-club:hover .more {
+    color: orange;
+}
+
+
+.container-club {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.block-club img {
+    border-radius: 16px 0px 0px 16px;
+
+}
+
+.block-club {
+    position: relative;
+}
+
+.card-club-right {
+    box-shadow: rgba(54, 73, 141, 0.16) 0px 13px 31px;
+    display: flex;
+    margin-bottom: 20px;
+    height: 170px;
+    cursor: pointer;
+    border-radius: 16px;
+    
+    transition: 300ms;
+}
+
+.grad-club {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-image: linear-gradient(360deg, #031f5652 24.91%, rgba(30, 65, 136, 0) 100%);
+    border-radius: 16px 0px 0px 16px;
+
+}
+
+.card-club-right:hover {
+    box-shadow: rgba(54, 73, 141, 0.322) 0px 13px 31px;
+
+}
+
+.info-card-club {
+    padding: 24px 16px;
+}
+
+.date-club {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(98, 116, 175);
+}
+
+.description-club {
+
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(10, 39, 95);
+    transition: color 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.title-club {
+    margin-top: 56px;
+
+    font-family: "Grotesk Semibold-free", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(10, 39, 95);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.all {
+    text-transform: uppercase;
+    color: #0A275F;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 56px 0px 100px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.all:hover .more-arrow {
+    transform: translateX(10px);
+}
+
+.all:hover {
+    color: orange;
+}
+
+.news-title {
+
+
+    font-family: "Grotesk Semibold-free", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    color: #0a275f;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 60px;
+}
+
+.news-hockey {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.news-hockey ul {
+    height: 188px;
+    overflow: hidden;
+    margin-right: 60px;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+.source-text {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6274af;
+}
+
+
+.name-news{
+    margin-bottom: 12px;
+    font-family: "Grotesk Semibold-free", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0a275f;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+.description-text{
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6274af;
+    letter-spacing: 0.02em;
+}
+
+.news-hockey ul:hover .name-news{
+    color: #0A3A98;
+}
+
+.footer {
+  background-color: #13223F; 
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  margin-top: 150px;
+}
+
+.footer-container {
+  padding: 40px 20px;
+
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.footer-brand, .footer-nav, .footer-subscribe {
+  flex: 1;
+  min-width: 250px;
+}
+
+.brand-text{
+    font-weight: 600;
+    color: #fff;
+    font-size: 22px;
+    margin:32px 0px ;
+}
+
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.payment-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #2c529c;
+  font-weight: 400;
+  margin-top: 28px;
+  transition: 300ms;
+}
+
+.nav-list a:last-child{
+    margin-top: 0;
+}
+
+.nav-list a:hover{
+    color: orange;
+    border: none;
+}
+
+.footer-subscribe h3{
+    margin-bottom: 4px;
+    font-family: "Grotesk regular-free", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: rgb(200, 206, 227);
+}
+
+.footer-subscribe p{
+    margin-bottom: 24px;
+    font-family: "Grotesk regular-free", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgb(200, 206, 227);
+    letter-spacing: 0.02em;
+}
+
+.subscribe-form {
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.subscribe-form input {
+  width: 472px;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(10, 39, 95);
+    border-radius: 61px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Grotesk regular-free", sans-serif;
+    transition: 500ms;
+    
+}
+
+.subscribe-form input:hover{
+  
+
+    border: 1px solid #6274AF;
+}
+
+
+.subscribe-form button {
+  padding: 6px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d1d5db; 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.text-footer{
+    
+    color: #0A2754;
+    font-weight: 900;
+}
+
+
+.bold{
+    color: #000BAC;
+}
+
+.google{
+    margin-right: 20px;
+}
+
+.info-footer{
+    padding: 17px 0px;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+.info-footer div p{
+    color: #627496;
+    margin-bottom: 10px;
+}
+
+.link{
+    background-image: linear-gradient(linear, left top, left bottom, from(#6274af), to(#6274af));
+    transition: 300ms;
+    color: #6274af;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #F4F5FB;
+}
+
+.link:hover{
+    color: #F4F5FB;
+    border-bottom: none;
+}
+input[type="checkbox"]{
+    display: none;
+
+}
+
+label{
+    position: relative;
+}
+
+/* Скрываем чекбокс */
+#toggle-btn {
+    display: none;
+}
+
+/* Стили для иконки-бургера */
+label[for="toggle-btn"] {
+    display: none; /* пока скрыт на больших экранах */
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 1000;
+}
+
+label[for="toggle-btn"] span,
+label[for="toggle-btn"] span::before,
+label[for="toggle-btn"] span::after {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+label[for="toggle-btn"] span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+label[for="toggle-btn"] span::before {
+    content: '';
+    top: -10px;
+}
+
+label[for="toggle-btn"] span::after {
+    content: '';
+    top: 10px;
+}
+
+/* Показать бургер на экранах меньше 1250px */
+@media (max-width: 1250px) {
+    label[for="toggle-btn"] {
+        display: block;
+    }
+
+    /* Скрываем обычное меню */
+    .listNav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #031F56;
+        z-index: 999;
+        text-align: center;
+    }
+
+    /* Показываем меню, когда чекбокс активен */
+    #toggle-btn:checked + label + nav .listNav {
+        display: flex;
+    }
+
+    .itemList {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #085EE8;
+    }
+
+    .itemList:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Анимация превращения бургера в крест */
+#toggle-btn:checked + label span {
+    background-color: transparent;
+}
+
+#toggle-btn:checked + label span::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle-btn:checked + label span::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+@media (max-width:992px) {
+    .container-news{
+        flex-direction: column;
+    }
+    .a{
+        width: 100%;
+    }
+
+    .container-match{
+        position: sticky;
+    }
+
+    .news{
+        height: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .title-news{
+        font-size: 38px;
+    }
+
+    .card-club-right{
+        margin-top: 100px;
+    }
+    .grad2{
+        display: none;
+    }
+
+    .card-club2{
+        width: 100%;
+    }
+
+    .card-club-right{
+        flex-direction: column;
+    }
+}
