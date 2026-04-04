@@ -541,6 +541,8 @@ label[for="toggle-btn"] span::after {
 
     label[for="toggle-btn"] {
         display: block;
+        position: absolute;
+        right: 40px;
     }
 
     .container-news,

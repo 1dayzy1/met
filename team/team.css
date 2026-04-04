@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 /* ==================== Хедер ==================== */
@@ -34,7 +35,7 @@ body {
     left: 0;
     right: 0;
     z-index: 999;
-    
+
 }
 
 .header-container {
@@ -133,53 +134,200 @@ label[for="toggle-btn"] span::after {
 
 
 
+main {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    /* max-width: 368px; */
+    width: 368px;
+    height: 392px;
+    background-color: #f8f9fa;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 32px;
+    
+}
+
+
+.title{
+    margin-right: 20px;
+}
+
+.number{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-size: 63px;
+    line-height: 72px;
+    color: #fa0;
+    font-family: "Grotesk Semibold-free", sans-serif;
+    text-transform: uppercase;
+}
+
+.player-photo{
+    position: absolute;
+    bottom: 0;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.player-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 14px 50px;
+    border-radius: 0 15px 0 0;
+    color: #fff;
+    background-image: linear-gradient(to right, #002d72 50%, #FFAA00 50%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.6s cubic-bezier(0.25, 1, 0.5, 1), width 0.3s ease;
+
+}
+
+.card:hover .player-info {
+    background-position: 100% 0%;
+
+
+}
+
+
+
+.container-players {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: end;
+}
+
+
+.default {
+    
+    
+    padding: 104px 0px;
+    
+
+}
+
+.container.pl{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.grey{
+    background-color:#F4F5FB ;
+    padding: 104px 0px;
+    
+    
+}
+
+
+
+
+@media (max-width:800px) {
+    .container.pl{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================== Подвал ==================== */
 .footer {
-  background-color: #13223F; 
-  color: #ffffff;
+    background-color: #13223F;
+    color: #ffffff;
 
-  font-family: Arial, sans-serif;
-  margin-top: 150px;
+    font-family: Arial, sans-serif;
+    margin-top: 150px;
 }
 
 .footer-container {
-  padding: 40px 20px;
+    padding: 40px 20px;
 
-  max-width: 1500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
-.footer-brand, .footer-nav, .footer-subscribe {
-  flex: 1;
-  min-width: 250px;
+.footer-brand,
+.footer-nav,
+.footer-subscribe {
+    flex: 1;
+    min-width: 250px;
 }
 
-.brand-text{
+.brand-text {
     font-weight: 600;
     color: #fff;
     font-size: 22px;
-    margin:32px 0px ;
+    margin: 32px 0px;
 }
 
 
 .footer-nav {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
-.app-buttons{
+.app-buttons {
     display: flex;
     align-items: center;
 }
 
-.payment-icons{
+.payment-icons {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -187,34 +335,34 @@ label[for="toggle-btn"] span::after {
 }
 
 .nav-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .nav-list li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .nav-list a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  border-bottom: 2px solid #2c529c;
-  font-weight: 400;
-  margin-top: 28px;
-  transition: 300ms;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 2px solid #2c529c;
+    font-weight: 400;
+    margin-top: 28px;
+    transition: 300ms;
 }
 
-.nav-list a:last-child{
+.nav-list a:last-child {
     margin-top: 0;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     color: orange;
     border: none;
 }
 
-.footer-subscribe h3{
+.footer-subscribe h3 {
     margin-bottom: 4px;
     font-family: "Grotesk regular-free", sans-serif;
     font-size: 18px;
@@ -223,7 +371,7 @@ label[for="toggle-btn"] span::after {
     color: rgb(200, 206, 227);
 }
 
-.footer-subscribe p{
+.footer-subscribe p {
     margin-bottom: 24px;
     font-family: "Grotesk regular-free", sans-serif;
     font-size: 16px;
@@ -234,16 +382,16 @@ label[for="toggle-btn"] span::after {
 
 .subscribe-form {
 
-  display: flex;
-  flex-wrap: wrap;
-  
-  gap: 10px;
-  margin-top: 15px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .subscribe-form input {
-  width: 472px;
+    width: 472px;
     height: 48px;
     padding: 0px 24px;
     background-color: rgb(10, 39, 95);
@@ -255,23 +403,23 @@ label[for="toggle-btn"] span::after {
     line-height: 26px;
     font-family: "Grotesk regular-free", sans-serif;
     transition: 500ms;
-    
+
 }
 
-.subscribe-form input:hover{
-  
+.subscribe-form input:hover {
+
 
     border: 1px solid #6274AF;
 }
 
 
 .subscribe-form button {
-  padding: 6px 30px;
-  border-radius: 20px;
-  border: none;
-  background-color: #d1d5db; 
-  cursor: pointer;
-  font-weight: bold;
+    padding: 6px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d1d5db;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 
@@ -279,37 +427,38 @@ label[for="toggle-btn"] span::after {
 
 
 
-.text-footer{
-    
+.text-footer {
+
     color: #0A2754;
     font-weight: 900;
 }
 
 
-.bold{
+.bold {
     color: #000BAC;
 }
 
-.google{
+.google {
     margin-right: 20px;
 }
 
-.info-footer{
+.info-footer {
     padding: 17px 0px;
     border-top: 1px solid;
     display: flex;
     justify-content: space-around;
     align-items: start;
-    flex-wrap: wrap;text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 
-.info-footer div p{
+.info-footer div p {
     color: #627496;
     margin-bottom: 10px;
 }
 
-.link{
+.link {
     background-image: linear-gradient(linear, left top, left bottom, from(#6274af), to(#6274af));
     transition: 300ms;
     color: #6274af;
@@ -318,9 +467,11 @@ label[for="toggle-btn"] span::after {
     border-bottom: 1px solid #F4F5FB;
 }
 
-.link:hover{
+.link:hover {
     color: #F4F5FB;
 }
+
+
 
 
 
@@ -343,10 +494,11 @@ label[for="toggle-btn"] span::after {
 
     label[for="toggle-btn"] {
         display: block;
-        margin-right: 40px;
+        position: absolute;
+        right: 40px;
     }
 
-    
 
-    
+
+
 }
