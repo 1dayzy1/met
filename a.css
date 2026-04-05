@@ -523,7 +523,7 @@ label[for="toggle-btn"] span::after {
 }
 
 /* ==================== Адаптив ==================== */
-@media (max-width: 1250px) {
+@media (max-width: 950px) {
     .listNav {
         display: none;
         flex-direction: column;

@@ -280,6 +280,7 @@ main{
     .container-item{
         margin-left: 0;
         margin-top: 30px;
+        margin-right: 0;
     }
     .item{
         width: 330px;
@@ -533,7 +534,8 @@ main{
 
     label[for="toggle-btn"] {
         display: block;
-        margin-right: 40px;
+        position: absolute;
+        right: 40px;
     }
 
     
