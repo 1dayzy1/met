@@ -34,7 +34,7 @@ const render = async (type = "all") => {
             item.innerHTML = `
                 <img src=${el.path} width="300" height="300" alt="">
                 <p class="title">${el.title}</p>
-                <p class="price">${el.price}</p>
+                <p class="price">${el.price} ₽</p>
                 
                 
                 <button class="add-btn">
